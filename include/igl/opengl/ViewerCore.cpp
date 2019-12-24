@@ -377,6 +377,7 @@ IGL_INLINE bool igl::opengl::ViewerCore::is_set(unsigned int property_mask) cons
 }
 
 IGL_INLINE igl::opengl::ViewerCore::ViewerCore()
+    : update_transform_matrices(true)
 {
   // Default colors
   background_color << 0.3f, 0.3f, 0.5f, 1.0f;

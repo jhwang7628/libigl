@@ -134,6 +134,7 @@ public:
   float camera_dfar;
 
   bool depth_test;
+  bool update_transform_matrices;
 
   // Animation
   bool is_animating;
@@ -184,6 +185,7 @@ namespace igl {
       SERIALIZE_MEMBER(camera_up);
 
       SERIALIZE_MEMBER(depth_test);
+      SERIALIZE_MEMBER(update_transform_matrices);
       SERIALIZE_MEMBER(is_animating);
       SERIALIZE_MEMBER(animation_max_fps);
 
